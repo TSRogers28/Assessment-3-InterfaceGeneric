@@ -5,6 +5,7 @@ import org.junit.Test;
 
 public class BubbleSortTest {
 
+
     @Test
     public void testSort_withMultipleNumbers(){
         int[] numbers = {9, 5, 2, 7, 3, 1};
@@ -49,20 +50,6 @@ public class BubbleSortTest {
         int[] expected = {7, 9};
         Assert.assertArrayEquals(expected, actual);
     }
-
-//    @Test
-//    public void testSort_withArrayNull(){
-//        Integer[] numbers = new Integer[10];
-//        int[] actual = BubbleSort.sort(numbers);
-//
-//        int[] expected = {7, 9};
-//        Assert.assertArrayEquals(expected, actual);
-//    }
-
-
-
-
-//1. When the array is null
 
   // add your tests here.
 }
