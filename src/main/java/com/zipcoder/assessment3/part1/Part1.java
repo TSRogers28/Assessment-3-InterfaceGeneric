@@ -30,7 +30,7 @@ public class Part1 {
      * @return return a function that will square a number
      */
     public static Function<Integer, Integer> getSquareFunction() {
-        Function<Integer, Integer> answer =  ( x, y) -> x * y;
+        Function<Integer, Integer> answer =  (x) -> x * x;
            return answer;
 
     }
