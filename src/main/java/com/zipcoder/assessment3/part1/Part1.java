@@ -9,7 +9,8 @@ public class Part1 {
      * @return a Pattern that match any vowel
      */
     public static Pattern getVowelPattern() {
-        return null;
+        Pattern pattern = Pattern.compile("[AEIOUaeiou]");
+        return pattern;
     }
 
     /**
@@ -18,7 +19,8 @@ public class Part1 {
      * @return
      */
     public static String removeVowel(String words) {
-        return null;
+        words= words.replaceAll("[AEIOUaeiou]", "");
+        return words;
     }
 
     /**
@@ -28,7 +30,9 @@ public class Part1 {
      * @return return a function that will square a number
      */
     public static Function<Integer, Integer> getSquareFunction() {
-        return null;
+           return null;
+                   //(Integer) p -> Math.pow(p, 2);
+
     }
 
     /**
@@ -40,7 +44,16 @@ public class Part1 {
      * @param object2
      * @return return true if they have the same content, false otherwise
      */
-    public static Boolean isEquals(String object1, String object2) {
-        return null;
+    public static Boolean isEquals(String object1, String object2) throws NullPointerException {
+        boolean answer = false;
+        try {
+            if (object1 == null && object2 == null || object1.equals(object2))
+                answer = true;
+        }
+        catch (NullPointerException e){
+
+        }
+
+        return answer;
     }
 }
