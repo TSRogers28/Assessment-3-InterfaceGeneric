@@ -30,8 +30,8 @@ public class Part1 {
      * @return return a function that will square a number
      */
     public static Function<Integer, Integer> getSquareFunction() {
-           return null;
-                   //(Integer) p -> Math.pow(p, 2);
+        Function<Integer, Integer> answer =  ( x, y) -> x * y;
+           return answer;
 
     }
 
